@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-
 const orderSchema = new mongoose.Schema(
   {
     user: {
@@ -89,7 +88,6 @@ const orderSchema = new mongoose.Schema(
     },
     paidAt: {
       type: Date,
-      required: true,
     },
     isDelivered: {
       type: Boolean,
@@ -98,7 +96,6 @@ const orderSchema = new mongoose.Schema(
     },
     deliveredAt: {
       type: Date,
-      required: true,
     },
   },
   {
